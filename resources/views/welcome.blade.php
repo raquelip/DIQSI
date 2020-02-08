@@ -63,14 +63,12 @@
           <div class="col-md-12">
             <div class="aa-header-top-area">
               <!-- start header top left -->
-              <div class="aa-header-top-left">
-              </div>
               <!-- / header top left -->
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
                   <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
                   <li><a href="account.html">Mi Cuenta</a></li>
-                  <li class="hidden-xs"><a href="checkout.html">Administrador</a></li>
+                  <li class="hidden-xs"><a href="{{url('/login')}}" target="_blank">Administrador</a></li>
                   <li class="cellphone hidden-xs"><p><span class="fa fa-phone"></span>0992845343</p></li>
                 </ul>
               </div>
@@ -82,6 +80,7 @@
     <!-- / header top  -->
 
     <!-- start header bottom  -->
+ 
     <div class="aa-header-bottom">
       <div class="container">
         <div class="row">
@@ -97,40 +96,6 @@
                 <!-- img based logo -->
                 <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
               </div>
-              <!-- / logo  -->
-               <!-- cart box -->
-              <div class="aa-cartbox">
-                <div class="aa-cartbox-summary">
-                  <ul>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>                    
-                    <li>
-                      <span class="aa-cartbox-total-title">
-                        Total
-                      </span>
-                      <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
-                    </li>
-                  </ul>
-                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
-                </div>
-              </div>
-              <!-- / cart box -->
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="">
@@ -164,7 +129,7 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="{{url('home')}}">Home</a></li>
               <li><a href="#">Tipos de regalos <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
                   <li><a href="#">Arreglos Florales</a></li>
@@ -349,10 +314,10 @@
               <div class="aa-product-inner">
                 <!-- start prduct navigation -->
                  <ul class="nav nav-tabs aa-products-tab">
-                    <li class="active"><a href="#men" data-toggle="tab">Men</a></li>
-                    <li><a href="#women" data-toggle="tab">Women</a></li>
-                    <li><a href="#sports" data-toggle="tab">Sports</a></li>
-                    <li><a href="#electronics" data-toggle="tab">Electronics</a></li>
+                    <li class="active"><a href="#men" data-toggle="tab">Cumpleaños</a></li>
+                    <li><a href="#women" data-toggle="tab">Flores</a></li>
+                    <li><a href="#sports" data-toggle="tab">Peluches</a></li>
+                    <li><a href="#electronics" data-toggle="tab">Aniversarios</a></li>
                   </ul>
                   <!-- Tab panes -->
                   <div class="tab-content">
@@ -498,7 +463,6 @@
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>                        
                       </ul>
-                      <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                     </div>
                     <!-- / men product category -->
                     <!-- start women product category -->
@@ -644,7 +608,7 @@
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>                        
                       </ul>
-                      <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                      
                     </div>
                     <!-- / women product category -->
                     <!-- start sports product category -->
@@ -1597,76 +1561,7 @@
   <!-- / Testimonial -->
 
   <!-- Latest Blog -->
-  <section id="aa-latest-blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-latest-blog-area">
-            <h2>LATEST BLOG</h2>
-            <div class="row">
-              <!-- single latest blog -->
-              <div class="col-md-4 col-sm-4">
-                <div class="aa-latest-blog-single">
-                  <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
-                      <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
-                      <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
-                    </figcaption>                          
-                  </figure>
-                  <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                    <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
-                  </div>
-                </div>
-              </div>
-              <!-- single latest blog -->
-              <div class="col-md-4 col-sm-4">
-                <div class="aa-latest-blog-single">
-                  <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-3.jpg" alt="img"></a>  
-                      <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
-                      <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
-                    </figcaption>                          
-                  </figure>
-                  <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                     <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>         
-                  </div>
-                </div>
-              </div>
-              <!-- single latest blog -->
-              <div class="col-md-4 col-sm-4">
-                <div class="aa-latest-blog-single">
-                  <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
-                      <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
-                      <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
-                    </figcaption>                          
-                  </figure>
-                  <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                    <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>    
-      </div>
-    </div>
-  </section>
+
   <!-- / Latest Blog -->
 
   <!-- Client Brand -->
