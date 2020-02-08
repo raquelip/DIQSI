@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('administracion','VistasController@MostrarAdministrador');
+Route::get('home','VistasController@MostrarInicio');
+Route::resource('registro','PersonasController');
