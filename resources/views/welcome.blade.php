@@ -68,7 +68,11 @@
                 <ul class="aa-head-top-nav-right">
                   <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
                   <li><a href="account.html">Mi Cuenta</a></li>
+<<<<<<< HEAD
                   <li class="hidden-xs"><a href="{{url('administracion')}}">Administrador</a></li>
+=======
+                  <li class="hidden-xs"><a href="{{url('/login')}}" target="_blank">Administrador</a></li>
+>>>>>>> 48cc0ced099afa2a9f0081a29247edc84627c531
                   <li class="cellphone hidden-xs"><p><span class="fa fa-phone"></span>0992845343</p></li>
                 </ul>
               </div>
